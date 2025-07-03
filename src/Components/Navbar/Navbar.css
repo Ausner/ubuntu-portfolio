@@ -1,0 +1,47 @@
+.navbar {
+    margin-top: 50px;
+    width: 90px;
+    height: 750px;
+    background: linear-gradient(135deg, #5a131f, #290c01);
+    border: 1px solid gray;
+    border-radius: 30px;
+    box-shadow: 2px 3px 5px;
+}
+
+ @media only screen and (max-width: 600px) {
+.navbar {
+    margin-top: 40%;
+    width: 55px;
+    height: 350px;
+    background: linear-gradient(135deg, #5a131f, #290c01);
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px;
+}
+
+}
+
+.icon {
+    width: 60px;
+    height: 65px;
+    background-color: none;
+    margin-left: 12px;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Suaviza el cambio */
+
+}
+
+ @media only screen and (max-width: 600px) {
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: none;
+    margin-left: 2px;
+    border-radius: 15px;
+}
+
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Aumenta el tamaño en 20% */
+}

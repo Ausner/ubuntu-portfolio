@@ -1,0 +1,29 @@
+.about {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+
+}
+
+
+ @media only screen and (max-width: 600px) {
+.selected {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 90%;
+    margin-top: 5px;
+    justify-self:  center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+}
