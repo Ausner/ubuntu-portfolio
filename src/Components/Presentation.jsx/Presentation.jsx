@@ -2,9 +2,10 @@ import './Presentation.css';
 import Navbar from '../Navbar/Navbar';
 import DraggablePopup from '../DraggablePopup/DraggablePopup';
 import { useEffect, useState } from 'react';
+import Terminal from '../Terminal/Terminal';
 
 function Presentation({iconActive, onClick}) {
-    const [iconClicked, setIconClicked] = useState("");
+    const [iconClicked, setIconClicked] = useState("INIT");
     console.log("pres> ", iconClicked)
 
     const handleClose = () => {

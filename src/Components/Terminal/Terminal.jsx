@@ -1,26 +1,16 @@
 import './Terminal.css';
 
-function Terminal () {
+function Terminal ({onButtonClick}) {
   return (
 
-<div className="container">
-    <div className="container_terminal"></div>
-    <div className="terminal_toolbar">
-        <div className="butt">
-            <button className="btn btn-color"></button>
-            <button className="btn"></button>
-            <button className="btn"></button>
-        </div>
-        <p className="user">johndoe@admin: ~</p>
+<div class="terminal-loader">
+  <div class="terminal-header">
+    <div class="terminal-title">Status</div>
+    <div class="terminal-controls">
+      <div class="control close" onClick={onButtonClick}></div>
     </div>
-    <div className="terminal_body">
-        <div className="terminal_promt">
-            <span className="terminal_user">johndoe@admin:</span>
-            <span className="terminal_location">~</span>
-            <span className="terminal_bling">$</span>
-            <span className="terminal_cursor"></span>
-        </div>
-    </div>
+  </div>
+  <div class="text">Welcome to my UBUNTU based portfolio! Please close this terminal and navigate through the system!</div>
 </div>
 
   );

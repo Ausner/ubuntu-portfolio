@@ -44,6 +44,19 @@ const DraggablePopup = ({ iconClicked, onClose }) => {
 
   return (
     <>
+     {iconClicked === 'IdNIT' && (
+      <Draggable handle=".popup-drag" nodeRef={nodeRef} bounds={bounds} defaultPosition={{
+        x: (window.innerWidth - modalWidth) / 2,
+        y: (window.innerHeight - modalHeight) / 2,
+      }} className="animate__animated animate__backOutLeft">
+        <div ref={nodeRef}>
+          <div className="popup-drag" ref={nodeRef}>
+
+            <Terminal onButtonClick={onClose}/>
+          </div>
+        </div>
+      </Draggable>)}
+
      {iconClicked === 'FILES' && (
       <Draggable handle=".popup-drag" nodeRef={nodeRef} bounds={bounds} defaultPosition={{
         x: (window.innerWidth - modalWidth) / 2,
